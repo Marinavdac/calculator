@@ -6,32 +6,60 @@
 
 #calculator {
     margin: auto;
-    width: 70vh;
+    width: 20rem;
     height: 70vh;
+    
+}
+
+#container {
+    background-color:  lightslategray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:space-between;
+    margin: auto;
+    border-radius: 0.2rem;
 }
 
 #view {
-    /* text-align: center; */
+    width: 100%;
+    padding: 0.4rem;
 }
 
 #display {
-    width: 91%;
+    width: 100%;
     text-align: center;
-    height: 4rem;
-    /* margin-bottom: 2rem; */
+    height: 5rem;
+    margin-bottom: 0.01rem;
+    background-color: rgba(2, 2, 3, 1);
+    color: greenyellow;
+    font-size: 2rem;
 }
 
 #options {
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
+    padding: 0.2rem;
+    justify-content: center;
+    
+}
 
+.numbers:hover {
+    background-color: rgb(187, 184, 184)
 }
 
 .numbers {
-    width: 5rem;
-    height: 5rem;
-    background-color: beige;
+    align-self: center;
+    line-height: 0.1rem;
+    width: 3.5rem;
+    height: 3.5rem;
+    background-color: darkgray;
     font-weight: bold;
-    padding: 2rem;
-    margin: 0.1rem;
+    padding: 2.27rem;
+    margin: 0.05rem;
+    font-size: 1.5rem;
+    cursor: pointer;
+  
 }
+
