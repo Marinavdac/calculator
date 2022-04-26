@@ -29,11 +29,9 @@ function operate(number1, operation, number2) {
 result.addEventListener('click', operate);
 
 function selection(event) {
-    selected.classList.remove('selected');
-    console.log(selected);
+    let selectedKey = document.querySelector('.selected');
+    selectedKey.classList.remove('selected');
     event.target.classList.add('selected');
-
- }
+}
  
-
 options.addEventListener('click', selection);
