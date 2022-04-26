@@ -11,11 +11,6 @@ display.addEventListener('input', () => {
  return savedItems;
 });
 
-window.onload = function () {
- const show = localStorage.getItem('numbers');
- return (display.value = show);
-};
-
 //uses btn CE to reset to clear display
 resetAll.addEventListener('click', () => {
  display.value = '';
@@ -37,6 +32,12 @@ result.addEventListener('click', operate);
 // options.addEventListener('click', selection);
 
 options.addEventListener('click', (event) => {
-    
-    display.value += event.target.innerText;
-} )
+    const total = display.value += event.target.innerText;
+    return localStorage.setItem('numbers', total);
+})
+
+window.onload = function () {
+    const show = localStorage.getItem('numbers');
+    return display.value = show;
+   };
+   
