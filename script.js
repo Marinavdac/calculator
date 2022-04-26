@@ -28,10 +28,15 @@ function operate(number1, operation, number2) {
 
 result.addEventListener('click', operate);
 
-function selection(event) {
-    let selectedKey = document.querySelector('.selected');
-    selectedKey.classList.remove('selected');
-    event.target.classList.add('selected');
-}
- 
-options.addEventListener('click', selection);
+// function selection(event) {
+//     let selectedKey = document.querySelector('.selected');
+//     selectedKey.classList.remove('selected');
+//     event.target.classList.add('selected');
+// }
+//  
+// options.addEventListener('click', selection);
+
+options.addEventListener('click', (event) => {
+    
+    display.value += event.target.innerText;
+} )
