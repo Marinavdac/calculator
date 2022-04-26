@@ -63,4 +63,6 @@
     border-radius: 0.2rem;
   
 }
-
+.selected {
+    background-color: white;
+}
